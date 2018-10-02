@@ -1,0 +1,14 @@
+<p>
+  tugas3 works!
+</p>
+<button class = "btn btn-primary"
+[disabled] = "allowNewServer"
+(click)="onCreationStatus()">Tampilkan Detail</button>
+<p>{{ serverCreationStatus }}</p>
+
+<p [ngClass] = "{online : tugas > 4}"
+  [ngStyle] = "{backgroundColor: tugas > 4? 'blue' : 'transparant'}" 
+  *ngFor = "let tugas of array">{{tugas}}</p>
+
+
+
